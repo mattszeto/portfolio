@@ -7,7 +7,9 @@ function App() {
       <header className="App-header">
         <p>
           <code>under construction</code>
+        </p>
 
+        <p>
           <code>#blacklivesmatter</code>
         </p>
       </header>
