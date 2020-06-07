@@ -6,11 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          <code>under construction  |  </code>
+          <code>under construction...</code>
         </p>
 
         <p>
-          <code>#blacklivesmatter</code>
+          <a href="https://blacklivesmatters.carrd.co/"><code>#blacklivesmatter</code></a>
         </p>
       </header>
     </div>
