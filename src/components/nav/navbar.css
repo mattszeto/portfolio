@@ -1,0 +1,73 @@
+.navbar-items {
+  height: 60px;
+  font-size: 1.1rem;
+}
+
+.navbar-logo {
+  color: white;
+  justify-self: start;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.75rem 1rem;
+  font-size: 30px;
+  position: 70%;
+}
+
+.navbar-logo:hover {
+  background-color: black;
+}
+
+.first-name {
+  color: rgb(206, 125, 206);
+  padding: 0rem 0.25rem;
+}
+
+.last-name {
+  color: rgb(233, 233, 136);
+  padding: 0rem 0.25rem;
+}
+
+.nav-right-btn {
+  text-align: center;
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  padding-left: 3.5rem;
+  font-size: 17px;
+}
+
+.nav-left-btn {
+  list-style: none;
+  float: left;
+  justify-content: end;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  font-size: 17px;
+}
+
+.nav-left-btn b {
+  display: none;
+}
+
+.nav-right-btn b {
+  display: none;
+}
+
+.nav-left-btn:hover b {
+  color: rgb(206, 125, 206);
+  transition: color 1s;
+  display: block;
+}
+
+.nav-right-btn:hover b {
+  color: rgb(233, 233, 136);
+  transition: color 1s;
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-logo {
+  }
+}
