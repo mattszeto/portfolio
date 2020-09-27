@@ -21,4 +21,5 @@ export const SquareContainer = styled.div`
 export const TextContainer = styled.div`
   padding: 16px;
   color: #c86c81;
+  font-size: 1.2rem;
 `;
