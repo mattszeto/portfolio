@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import colors from "../../common";
+import colors from "../../common/colors";
 
 const TopBar = styled.div`
   height: ${(props) => props.scale * 22}px;
-  background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -webkit-linear-gradient(top, #353c51, #353c51);
   border-radius: ${(props) => props.scale * 4}px ${(props) => props.scale * 4}px
     0 0;
   width: 100%;
@@ -35,7 +35,7 @@ const WindowBar = ({ scale }) => (
 );
 
 WindowBar.defaultProps = {
-  scale: 1,
+  scale: 0.75,
 };
 
 export default WindowBar;

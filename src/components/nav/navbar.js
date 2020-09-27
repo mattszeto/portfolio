@@ -14,6 +14,10 @@ class Navbar extends Component {
       <nav className="navbar-items">
         <code className="navbar-logo first-name">
           matthew<span className="last-name">szeto</span>
+          <br />
+          <span className="navbar-logo-software">
+            (software<span className="navbar-logo-engineer">engineer)</span>
+          </span>
         </code>
         <a
           className="nav-left-btn"

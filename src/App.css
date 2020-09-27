@@ -1,17 +1,23 @@
 * {
   font-family: monospace;
 }
-.App {
+.app {
   text-align: center;
 }
 
-.App-header {
-  background-color: rgb(38, 38, 58);
+.app-body {
+  background-color: #506680;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 22px;
   color: white;
+}
+
+.app-windows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 a {
@@ -20,4 +26,8 @@ a {
 
 a:hover {
   color: rgb(187, 187, 187);
+}
+
+.text-not-red {
+  color: white;
 }

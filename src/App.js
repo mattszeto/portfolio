@@ -3,20 +3,33 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/nav/navbar";
+import WindowBar from "./components/window-bar/windowbar";
+import {
+  Container,
+  SquareContainer,
+  TextContainer,
+} from "../src/components/containers";
 
 function App() {
   useEffect(() => {
     Aos.init({});
   }, []);
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-body">
         <Navbar />
-        <p>
-          <a href="https://blacklivesmatters.carrd.co/">
-            <code>#blacklivesmatter</code>
-          </a>
-        </p>
+        <Container>
+          <SquareContainer>
+            <WindowBar />
+            <TextContainer>
+              {" "}
+              &lt;error&gt; <span className="text-not-red">
+                come soon...
+              </span>{" "}
+              &lt;/error&gt;
+            </TextContainer>
+          </SquareContainer>
+        </Container>
       </header>
     </div>
   );

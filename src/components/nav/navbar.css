@@ -8,13 +8,21 @@
   justify-self: start;
   cursor: pointer;
   display: inline-block;
-  margin: 0.75rem 1rem;
+  margin: 0.75rem 0rem;
   font-size: 30px;
   position: 70%;
 }
 
-.navbar-logo:hover {
-  background-color: black;
+.navbar-logo-software {
+  margin: 0rem 0.25rem;
+  font-size: 1.1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-logo-engineer {
+  margin: 0rem 0.25rem;
 }
 
 .first-name {
@@ -34,7 +42,7 @@
   text-decoration: none;
   padding: 1.2rem 2rem;
   padding-left: 3.5rem;
-  font-size: 17px;
+  font-size: 1.3rem;
 }
 
 .nav-left-btn {
@@ -44,7 +52,7 @@
   color: white;
   text-decoration: none;
   padding: 1.2rem 2rem;
-  font-size: 17px;
+  font-size: 1.3rem;
 }
 
 .nav-left-btn b {
