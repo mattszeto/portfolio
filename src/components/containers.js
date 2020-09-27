@@ -5,10 +5,9 @@ import colors from "../common/colors";
 export const Container = styled.div`
   margin: 0 auto;
   padding: 16px 16px;
-  max-width: 800px;
   margin-bottom: 16px;
-  width: 80%;
-  min-width: 465px;
+  width: 90%;
+  max-width: 800px;
 `;
 
 export const SquareContainer = styled.div`
