@@ -23,10 +23,21 @@ function App() {
             <WindowBar />
             <TextContainer>
               {" "}
+              <span className="text-not-red">
+                Github: projects im working on! <br />
+                Linkedin: resume and experiences!
+              </span>
+              <br />
+              <br />
               &lt;error&gt; <span className="text-not-red">
                 come soon...
               </span>{" "}
               &lt;/error&gt;
+              <br />
+              <br />
+              <span className="text-not-red">
+                Looking for New Grad Software Engineer Roles
+              </span>
             </TextContainer>
           </SquareContainer>
         </Container>
