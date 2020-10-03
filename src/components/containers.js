@@ -12,10 +12,10 @@ export const Container = styled.div`
 
 export const SquareContainer = styled.div`
   box-sizing: border-box;
-  background-color: ${colors.black};
+  background-color: ${colors.darkGrey};
   border-radius: 4px;
   width: 100%;
-  height: 500px;
+  height: 40rem;
 `;
 
 export const TextContainer = styled.div`

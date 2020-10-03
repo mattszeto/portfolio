@@ -5,7 +5,7 @@ import colors from "../../common/colors";
 
 const TopBar = styled.div`
   height: ${(props) => props.scale * 22}px;
-  background: -webkit-linear-gradient(top, #353c51, #353c51);
+  background: -webkit-linear-gradient(top, #252526, #252526);
   border-radius: ${(props) => props.scale * 4}px ${(props) => props.scale * 4}px
     0 0;
   width: 100%;
@@ -27,9 +27,9 @@ const Circle = styled.div`
 const WindowBar = ({ scale }) => (
   <TopBar scale={scale}>
     <CirclesContainer scale={scale}>
-      <Circle scale={scale} bgColor={colors.darkGreen} />
-      <Circle scale={scale} bgColor={colors.blue} />
-      <Circle scale={scale} bgColor={colors.purple} />
+      <Circle scale={scale} bgColor={colors.red} />
+      <Circle scale={scale} bgColor={colors.yellow} />
+      <Circle scale={scale} bgColor={colors.green} />
     </CirclesContainer>
   </TopBar>
 );

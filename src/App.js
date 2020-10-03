@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/nav/navbar";
 import WindowBar from "./components/window-bar/windowbar";
+
 import {
   Container,
   SquareContainer,
