@@ -26,6 +26,7 @@ a {
 
 a:hover {
   color: rgb(187, 187, 187);
+  transform: translate(0, -0.5rem);
 }
 
 .text-not-red {

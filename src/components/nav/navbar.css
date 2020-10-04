@@ -11,9 +11,7 @@
   margin: 0.75rem 0rem;
   font-size: 2.5rem;
   position: 70%;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-logo-software {
@@ -22,9 +20,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-logo-engineer {
@@ -32,7 +28,7 @@
 }
 
 .first-name {
-  color: rgb(206, 125, 206);
+  color: #be3409;
   padding: 0rem 0.25rem;
 }
 
@@ -49,9 +45,7 @@
   padding: 1.5rem 2rem;
   padding-left: 3.5rem;
   font-size: 1.3rem;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-left-btn {
@@ -62,9 +56,7 @@
   text-decoration: none;
   padding: 1.5rem 2rem;
   font-size: 1.3rem;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-left-btn b {
@@ -76,24 +68,24 @@
 }
 
 .nav-left-btn:hover b {
-  color: rgb(206, 125, 206);
+  color: #be3409;
   transition: color 1s;
   display: block;
 }
 
 .nav-right-btn:hover b {
-  color: rgb(233, 233, 136);
+  color: #e9e988;
   transition: color 1s;
   display: block;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 485px) {
   .navbar-logo {
     padding: 1.2rem 0rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .navbar-logo-software {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .nav-left-btn {
