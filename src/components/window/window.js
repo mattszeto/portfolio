@@ -20,6 +20,7 @@ export const SquareContainer = styled.div`
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
+    filter: brightness(120%);
   }
 `;
 

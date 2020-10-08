@@ -26,30 +26,74 @@ class App extends React.Component {
     const { x, y } = this.state;
 
     return (
-      <div className="app">
+      <div>
         <header className="app-body">
           <Navbar />
           <Container>
             <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
               <WindowBar />
               <TextContainer>
-                <span className="text-not-red">
-                  Github: projects im working on! <br />
-                  Linkedin: resume and experiences!
-                </span>
+                Computer Science Student 1.4.0 <br />
+                Copyright (c) Matt Szeto Corporation. All rights reserved.
                 <br />
                 <br />
-                &lt;error&gt; <span className="text-not-red">come soon...</span>
-                &lt;/error&gt;
+                <br />
+                https://matthewszeto.com
+                <br />
+                Click 'github' or 'linkedin' for more information.
                 <br />
                 <br />
-                <span className="text-not-red">
-                  Looking for New Grad Software Engineer Roles
-                </span>
-                <h1>
+                software-engineer@MATT ~\mattszeto\brain\tech$ run skills --hire
+                -me
+                <br />
+                <br />
+                Loading languages...
+                <br />
+                >>> Javascript / Typescript
+                ........................................................ 100%
+                <br />
+                >>> Java
+                ...........................................................................
+                100%
+                <br />
+                >>> Python
+                .........................................................................
+                90%
+                <br />
+                >>> Swift
+                ..........................................................................
+                75%
+                <br />
+                >>> SQL
+                ............................................................................
+                70%
+                <br />
+                <br />
+                Loading technologies...
+                <br />
+                >>> React.js / Next.js
+                .............................................................
+                100%
+                <br />
+                >>> Node.js
+                ........................................................................
+                100%
+                <br />
+                >>> Git
+                ............................................................................
+                100%
+                <br />
+                >>> PostgreSQL
+                .....................................................................
+                50%
+                <br />
+                <br />
+                currently looking for software engineering roles...
+                {/*Displays mouse cordinates when hovering over SquareContainer (will be used later for parallax effect)*/}
+                {/* <h1>
                   {x}
                   {y}
-                </h1>
+                </h1> */}
               </TextContainer>
             </SquareContainer>
           </Container>
