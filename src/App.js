@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Aos from "aos";
+//import Aos from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/nav/navbar";
+import HomeContents from "./components/window/home-contents";
+
 import {
   Container,
   SquareContainer,
@@ -33,67 +35,7 @@ class App extends React.Component {
             <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
               <WindowBar />
               <TextContainer>
-                Computer Science Student 1.4.0 <br />
-                Copyright (c) Matt Szeto Corporation. All rights reserved.
-                <br />
-                <br />
-                <br />
-                https://matthewszeto.com
-                <br />
-                Click 'github' or 'linkedin' for more information.
-                <br />
-                <br />
-                software-engineer@MATT ~\mattszeto\brain\tech$ run skills --hire
-                -me
-                <br />
-                <br />
-                Loading languages...
-                <br />
-                >>> Javascript / Typescript
-                ........................................................ 100%
-                <br />
-                >>> Java
-                ...........................................................................
-                100%
-                <br />
-                >>> Python
-                .........................................................................
-                90%
-                <br />
-                >>> Swift
-                ..........................................................................
-                75%
-                <br />
-                >>> SQL
-                ............................................................................
-                70%
-                <br />
-                <br />
-                Loading technologies...
-                <br />
-                >>> React.js / Next.js
-                .............................................................
-                100%
-                <br />
-                >>> Node.js
-                ........................................................................
-                100%
-                <br />
-                >>> Git
-                ............................................................................
-                100%
-                <br />
-                >>> PostgreSQL
-                .....................................................................
-                50%
-                <br />
-                <br />
-                currently looking for software engineering roles...
-                {/*Displays mouse cordinates when hovering over SquareContainer (will be used later for parallax effect)*/}
-                {/* <h1>
-                  {x}
-                  {y}
-                </h1> */}
+                <HomeContents />
               </TextContainer>
             </SquareContainer>
           </Container>
