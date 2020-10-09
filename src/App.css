@@ -32,3 +32,10 @@ a:hover {
 .text-not-red {
   color: white;
 }
+
+@media screen and (max-width: 900px) {
+  .change-font-size {
+    font-size: 1.5vw;
+    transition: all 0.1s ease;
+  }
+}

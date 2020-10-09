@@ -4,7 +4,7 @@ import Delayed from "../delayed";
 export default class homecontents extends Component {
   render() {
     return (
-      <div>
+      <div className="change-font-size">
         Computer Science Student 1.4.0 <br />
         Copyright (c) Matt Szeto Corporation. All rights reserved.
         <br />

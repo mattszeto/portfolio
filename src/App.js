@@ -35,7 +35,7 @@ class App extends React.Component {
             <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
               <WindowBar />
               <TextContainer>
-                <HomeContents />
+                <HomeContents/>
               </TextContainer>
             </SquareContainer>
           </Container>

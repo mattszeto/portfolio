@@ -28,6 +28,7 @@ export const TextContainer = styled.div`
   padding: 16px;
   color: ${colors.red};
   font-size: 1.2rem;
+  transition: all 0.1s ease;
 `;
 
 const TopBar = styled.div`
