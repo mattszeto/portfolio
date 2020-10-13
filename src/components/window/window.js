@@ -4,7 +4,7 @@ import colors from "../../common/colors";
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 16px 16px;
+  padding: 5px 5px;
   margin-bottom: 16px;
   width: 90%;
   max-width: 800px;

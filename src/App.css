@@ -2,16 +2,15 @@
   font-family: monospace;
 }
 .app {
-  text-align: center;
+  height: 100vh;
+  background-color: #363636;
 }
 
-.app-body {
-  background-color: #363636;
-  min-height: 100vh;
+.app-header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   font-size: 22px;
-  color: white;
 }
 
 .app-windows {

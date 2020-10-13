@@ -28,9 +28,12 @@ class App extends React.Component {
     const { x, y } = this.state;
 
     return (
-      <div>
-        <header className="app-body">
+      <div className="app">
+        <header className="app-header">
           <Navbar />
+          
+        </header>
+        <div className="app-body">
           <Container>
             <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
               <WindowBar />
@@ -39,7 +42,7 @@ class App extends React.Component {
               </TextContainer>
             </SquareContainer>
           </Container>
-        </header>
+         </div>
       </div>
     );
   }
