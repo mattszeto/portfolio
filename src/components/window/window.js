@@ -13,10 +13,10 @@ export const Container = styled.div`
 export const SquareContainer = styled.div`
   box-sizing: border-box;
   background-color: ${colors.darkGrey};
-  border-radius: 4px;
-  margin-top: 1.2rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
   width: 100%;
-  height: 40rem;
+  height: 32rem;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
@@ -27,7 +27,7 @@ export const SquareContainer = styled.div`
 export const TextContainer = styled.div`
   padding: 16px;
   color: ${colors.red};
-  font-size: 1.2rem;
+  font-size: .8rem;
   transition: all 0.1s ease;
 `;
 
