@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 //import Aos from "aos";
 import "aos/dist/aos.css";
+import Dock from "react-osx-dock";
 
 import Navbar from "./components/nav/navbar";
 import HomeContents from "./components/window/home-contents";
@@ -31,7 +32,6 @@ class App extends React.Component {
       <div className="app">
         <header className="app-header">
           <Navbar />
-          
         </header>
         <div className="app-body">
           <Container>
@@ -43,6 +43,7 @@ class App extends React.Component {
             </SquareContainer>
           </Container>
          </div>
+         <footer>hi</footer>
       </div>
     );
   }

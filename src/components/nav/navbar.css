@@ -72,12 +72,14 @@
   color: #be3409;
   transition: color 1s;
   display: block;
+  padding: 0.1rem 0rem;
 }
 
 .nav-right-btn:hover b {
   color: #e9e988;
   transition: color 1s;
   display: block;
+  padding: 0.1rem 0rem;
 }
 
 @media screen and (max-width: 550px) {
