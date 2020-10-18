@@ -22,58 +22,65 @@ export default class homecontents extends Component {
           Loading languages...
           <br />{" "}
           <Delayed waitBeforeShow={1000}>
-            >>> Javascript / Typescript
+            {">>>"} Javascript / Typescript
             ................................................ 100%
             <br />
             <Delayed waitBeforeShow={345}>
-              >>> Java
+              {">>>"} Java
               ...................................................................
               100%
               <br />
               <Delayed waitBeforeShow={100}>
                 {" "}
-                >>> Python
+                {">>>"} Python
                 .................................................................
                 90%
                 <br />
                 <Delayed waitBeforeShow={300}>
-                  >>> Swift
+                  {">>>"} Swift
                   ..................................................................
                   75%
                   <br />
                   <Delayed waitBeforeShow={300}>
-                    >>> SQL
+                    {">>>"} SQL
                     ....................................................................
                     70%
                     <br />
-                    <Delayed waitBeforeShow={150}>
+                    <Delayed waitBeforeShow={230}>
+                      {" "}
+                      {">>>"} GraphQL
+                      ................................................................
+                      65%
                       <br />
-                      Loading technologies...
-                      <br />
-                      <Delayed waitBeforeShow={1100}>
-                        >>> React.js / Next.js
-                        .....................................................
-                        100%
+                      <Delayed waitBeforeShow={150}>
                         <br />
-                        <Delayed waitBeforeShow={200}>
-                          >>> Node.js
-                          ................................................................
+                        Loading technologies...
+                        <br />
+                        <Delayed waitBeforeShow={1100}>
+                          {">>>"} React.js / Next.js
+                          .....................................................
                           100%
                           <br />
-                          <Delayed waitBeforeShow={500}>
-                            >>> Git
-                            ....................................................................
+                          <Delayed waitBeforeShow={200}>
+                            {">>>"} Node.js
+                            ................................................................
                             100%
                             <br />
-                            <Delayed waitBeforeShow={300}>
-                              >>> PostgreSQL
-                              .............................................................
-                              50%
+                            <Delayed waitBeforeShow={500}>
+                              {">>>"} Git
+                              ....................................................................
+                              100%
                               <br />
-                              <Delayed waitBeforeShow={250}>
+                              <Delayed waitBeforeShow={300}>
+                                {">>>"} PostgreSQL
+                                .............................................................
+                                50%
                                 <br />
-                                currently looking for software engineering
-                                roles...
+                                <Delayed waitBeforeShow={250}>
+                                  <br />
+                                  currently looking for software engineering
+                                  roles...
+                                </Delayed>
                               </Delayed>
                             </Delayed>
                           </Delayed>
