@@ -12,6 +12,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar-items">
+        <a
+          className="nav-left-btn"
+          href="https://www.linkedin.com/in/matthewszeto/"
+        >
+          linkedin <b>connect</b>
+        </a>
         <code className="navbar-logo first-name">
           matthew<span className="last-name">szeto</span>
           <br />
@@ -19,12 +25,7 @@ class Navbar extends Component {
             (software<span className="navbar-logo-engineer">engineer)</span>
           </span>
         </code>
-        <a
-          className="nav-left-btn"
-          href="https://www.linkedin.com/in/matthewszeto/"
-        >
-          linkedin <b>connect</b>
-        </a>
+
         <a className="nav-right-btn" href="https://github.com/mattszeto">
           github <b>follow</b>
         </a>

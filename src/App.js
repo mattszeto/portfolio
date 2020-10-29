@@ -12,6 +12,7 @@ import {
   TextContainer,
   WindowBar,
 } from "./components/window/window";
+import Repos from "./components/github/repos";
 
 class App extends React.Component {
   constructor(props) {
@@ -36,13 +37,20 @@ class App extends React.Component {
           <Container>
             <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
               <WindowBar />
-              <TextContainer >
-                  <HomeContents />                       
+              <TextContainer>
+                <HomeContents />
               </TextContainer>
             </SquareContainer>
           </Container>
-         </div>
-         
+          <Container>
+            <SquareContainer>
+              <WindowBar />
+              <TextContainer>
+                <Repos />
+              </TextContainer>
+            </SquareContainer>
+          </Container>
+        </div>
       </div>
     );
   }

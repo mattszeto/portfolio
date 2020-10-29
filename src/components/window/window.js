@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 5px 5px;
   margin-bottom: 16px;
   width: 90%;
-  max-width: 800px;
+  max-width: 700px;
 `;
 
 export const SquareContainer = styled.div`
@@ -16,7 +16,7 @@ export const SquareContainer = styled.div`
   border-radius: 5px;
   margin-top: 1.5rem;
   width: 100%;
-  height: 32rem;
+  height: 30rem;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
@@ -27,7 +27,7 @@ export const SquareContainer = styled.div`
 export const TextContainer = styled.div`
   padding: 16px;
   color: ${colors.red};
-  font-size: .8rem;
+  font-size: 0.8rem;
   transition: all 0.1s ease;
 `;
 

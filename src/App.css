@@ -6,6 +6,11 @@
   background-color: #363636;
 }
 
+.app-body {
+  /* display: flex; */
+  width: 100%;
+}
+
 .app-header {
   display: flex;
   flex-direction: column;
@@ -32,9 +37,21 @@ a:hover {
   color: white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   .change-font-size {
-    font-size: 1.5vw;
+    font-size: 11px;
+    transition: all 0.1s ease;
+  }
+}
+@media screen and (max-width: 375px) {
+  .change-font-size {
+    font-size: 9px;
+    transition: all 0.1s ease;
+  }
+}
+@media screen and (max-width: 300px) {
+  .change-font-size {
+    font-size: 7px;
     transition: all 0.1s ease;
   }
 }
