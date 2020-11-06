@@ -24,6 +24,10 @@
   justify-content: space-evenly;
 }
 
+.dots {
+  background-color: "black";
+}
+
 a {
   color: rgb(70, 70, 207);
 }
@@ -43,7 +47,7 @@ a:hover {
     transition: all 0.1s ease;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .change-font-size {
     font-size: 9px;
     transition: all 0.1s ease;

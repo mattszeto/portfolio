@@ -14,11 +14,17 @@ import {
 } from "./components/window/window";
 import Repos from "./components/github/repos";
 
+import Carousel from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { x: 0, y: 0 };
+    this.state = {
+      x: 0,
+      y: 0,
+    };
   }
 
   _onMouseMove(e) {
@@ -34,22 +40,24 @@ class App extends React.Component {
           <Navbar />
         </header>
         <div className="app-body">
-          <Container>
-            <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
-              <WindowBar />
-              <TextContainer>
-                <HomeContents />
-              </TextContainer>
-            </SquareContainer>
-          </Container>
-          <Container>
-            <SquareContainer>
-              <WindowBar />
-              <TextContainer>
-                <Repos />
-              </TextContainer>
-            </SquareContainer>
-          </Container>
+          <Carousel>
+            <Container>
+              <SquareContainer onMouseMove={this._onMouseMove.bind(this)}>
+                <WindowBar />
+                <TextContainer>
+                  <HomeContents />
+                </TextContainer>
+              </SquareContainer>
+            </Container>
+            <Container>
+              <SquareContainer>
+                <WindowBar />
+                <TextContainer>
+                  <Repos />
+                </TextContainer>
+              </SquareContainer>
+            </Container>
+          </Carousel>
         </div>
       </div>
     );

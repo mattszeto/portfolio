@@ -26,11 +26,17 @@ export default class repos extends Component {
     const { isLoaded, repos } = this.state;
     return (
       <div>
+        <div>Oh... you were not suppose to find this..</div>
+        <br />
         <ul>
+          {" "}
+          Github Repos
           {repos.map((repo) => (
             <li key={repo.id}>{repo.name}</li>
           ))}
         </ul>
+        Since you are here... <br /> check out my{" "}
+        <a href="https://github.com/mattszeto">Github</a>
       </div>
     );
   }
