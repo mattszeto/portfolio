@@ -16,7 +16,8 @@ export const SquareContainer = styled.div`
   border-radius: 5px;
   margin-top: 1.5rem;
   width: 100%;
-  height: 30rem;
+  height: 100%;
+  min-height: 30rem;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
