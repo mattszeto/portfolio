@@ -1,5 +1,5 @@
 import React from "react";
-import Delayed from "../delayed";
+import Delayed from "../../utils/delayed";
 
 const HomeContent = () => {
   return (

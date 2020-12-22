@@ -1,0 +1,18 @@
+@media screen and (max-width: 500px) {
+  .change-font-size {
+    font-size: 11px;
+    transition: all 0.1s ease;
+  }
+}
+@media screen and (max-width: 400px) {
+  .change-font-size {
+    font-size: 9px;
+    transition: all 0.1s ease;
+  }
+}
+@media screen and (max-width: 300px) {
+  .change-font-size {
+    font-size: 7px;
+    transition: all 0.1s ease;
+  }
+}

@@ -24,10 +24,6 @@
   justify-content: space-evenly;
 }
 
-.dots {
-  background-color: "black";
-}
-
 a {
   color: rgb(70, 70, 207);
 }
@@ -35,27 +31,4 @@ a {
 a:hover {
   color: rgb(187, 187, 187);
   transform: translate(0, -0.5rem);
-}
-
-.text-not-red {
-  color: white;
-}
-
-@media screen and (max-width: 500px) {
-  .change-font-size {
-    font-size: 11px;
-    transition: all 0.1s ease;
-  }
-}
-@media screen and (max-width: 400px) {
-  .change-font-size {
-    font-size: 9px;
-    transition: all 0.1s ease;
-  }
-}
-@media screen and (max-width: 300px) {
-  .change-font-size {
-    font-size: 7px;
-    transition: all 0.1s ease;
-  }
 }

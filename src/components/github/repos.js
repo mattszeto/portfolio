@@ -28,7 +28,7 @@ const Repos = () => {
         />
       ))}
       <p>
-        Since you are here, check out my{" "}
+        since you are here, check out my{" "}
         <a href="https://github.com/mattszeto">Github</a>
       </p>
     </div>
