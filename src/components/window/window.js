@@ -5,7 +5,7 @@ import colors from "../../common/colors";
 export const Container = styled.div`
   margin: 0 auto;
   padding: 5px 5px;
-  margin-bottom: 16px;
+  margin-top: 10px;
   width: 90%;
   max-width: 700px;
 `;
@@ -21,7 +21,30 @@ export const SquareContainer = styled.div`
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
-    filter: brightness(120%);
+    filter: brightness(110%);
+  }
+`;
+
+export const MiniContainer = styled.div`
+  margin: 0 auto;
+  padding: 5px 5px;
+  margin-bottom: 16px;
+  width: 90%;
+  max-width: 350px;
+`;
+
+export const MiniSquareContainer = styled.div`
+  box-sizing: border-box;
+  background-color: ${colors.darkGrey};
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 100%;
+  min-height: 15rem;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
+    filter: brightness(110%);
   }
 `;
 
@@ -30,12 +53,25 @@ export const TextContainer = styled.div`
   color: ${colors.red};
   font-size: 0.8rem;
   transition: all 0.1s ease;
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+    transition: all 0.4s ease;
+  }
+  @media screen and (max-width: 310px) {
+    font-size: 8.5px;
+    transition: all 0.4s ease;
+  }
 `;
 
 const TopBar = styled.div`
   height: ${(props) => props.scale * 22}px;
-  background: -webkit-linear-gradient(top, #252526, #252526);
-  border-radius: ${(props) => props.scale * 4}px ${(props) => props.scale * 4}px
+  background: -webkit-linear-gradient(
+    top,
+    ${colors.darkGrey},
+    ${colors.darkGrey}
+  );
+  border-radius: ${(props) => props.scale * 6}px ${(props) => props.scale * 4}px
     0 0;
   width: 100%;
 `;
@@ -55,6 +91,10 @@ const Circle = styled.div`
   filter: saturate(10%);
 
   ${SquareContainer}:hover & {
+    opacity: 1;
+    filter: saturate(1);
+  }
+  ${MiniSquareContainer}:hover & {
     opacity: 1;
     filter: saturate(1);
   }

@@ -1,3 +1,9 @@
+:root {
+  --white-color: #e8eae6;
+  --red-color: #e5707e;
+  --yellow-color: #e8e9a1;
+}
+
 .navbar-items {
   height: 70px;
   font-size: 1.1rem;
@@ -5,7 +11,7 @@
 }
 
 .navbar-logo {
-  color: white;
+  color: var(--white-color);
   justify-self: start;
   cursor: pointer;
   display: inline-block;
@@ -18,7 +24,7 @@
 .navbar-logo-software {
   margin: 0rem 0.25rem;
   font-size: 1.1rem;
-  color: white;
+  color: #e8eae6;
   display: flex;
   justify-content: center;
   transition: all 0.3s ease;
@@ -29,19 +35,19 @@
 }
 
 .first-name {
-  color: #be3409;
+  color: var(--red-color);
   padding: 0rem 0.25rem;
 }
 
 .last-name {
-  color: rgb(233, 233, 136);
+  color: var(--yellow-color);
   padding: 0rem 0.25rem;
 }
 
 .nav-right-btn {
   text-align: center;
   float: right;
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
   padding: 1.5rem 2rem;
   padding-left: 3.5rem;
@@ -53,7 +59,7 @@
   list-style: none;
   float: left;
   justify-content: end;
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
   padding: 1.5rem 2rem;
   font-size: 1rem;
@@ -69,14 +75,14 @@
 }
 
 .nav-left-btn:hover b {
-  color: #be3409;
+  color: var(--red-color);
   transition: color 1s;
   display: block;
   padding: 0.1rem 0rem;
 }
 
 .nav-right-btn:hover b {
-  color: #e9e988;
+  color: var(--yellow-color);
   transition: color 1s;
   display: block;
   padding: 0.1rem 0rem;

@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
 import "aos/dist/aos.css";
-import Navbar from "./components/nav/NavBar";
-import HomeContents from "./components/window/HomeContent";
+import Navbar from "./components/NavBar/NavBar";
+import Introduction from "./components/Introduction/IntroductionContent";
 import {
   Container,
   SquareContainer,
+  MiniContainer,
+  MiniSquareContainer,
   TextContainer,
   WindowBar,
-} from "./components/window/Window";
-import Repos from "./components/github/Repos";
-
-import Carousel from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+} from "./components/Window/Window";
 
 const App = () => {
   const [x, setX] = useState(0);
@@ -30,24 +28,20 @@ const App = () => {
         <Navbar />
       </header>
       <div className="app-body">
-        <Carousel>
-          <Container>
-            <SquareContainer onMouseMove={_onMouseMove}>
-              <WindowBar />
-              <TextContainer>
-                <HomeContents />
-              </TextContainer>
-            </SquareContainer>
-          </Container>
-          <Container>
-            <SquareContainer>
-              <WindowBar />
-              <TextContainer>
-                <Repos />
-              </TextContainer>
-            </SquareContainer>
-          </Container>
-        </Carousel>
+        <Container>
+          <SquareContainer onMouseMove={_onMouseMove}>
+            <WindowBar />
+            <TextContainer>
+              <Introduction />
+            </TextContainer>
+          </SquareContainer>
+        </Container>
+        <MiniContainer>
+          <MiniSquareContainer>
+            <WindowBar />
+            <TextContainer>Coming Soon...</TextContainer>
+          </MiniSquareContainer>
+        </MiniContainer>
       </div>
     </div>
   );
