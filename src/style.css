@@ -1,8 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@600&family=Inconsolata&family=Roboto+Mono&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+
 :root {
+  --black-color: #1f1e1e;
   --white-color: #e8eae6;
   --red-color: #e5707e;
   --yellow-color: #e8e9a1;
+  --blue-color: #a3ddcb;
+  --orange-color: #e6b566;
+  --purple-color: #9955bb;
+  --light-grey-color: #bbbbbb;
 }
+/* ============ INDEX ============ */
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: var(--black-color);
+}
+
+/* ========= MAIN APP ========== */
+* {
+  font-family: "Roboto Mono";
+}
+
+.app {
+  height: 100vh;
+  background-color: var(--black-color);
+}
+
+.app-body {
+  /* display: flex; */
+  background-color: var(--black-color);
+  width: 100%;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+}
+
+.app-windows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* =========== NAV BAR ============ */
 
 .navbar-items {
   height: 70px;
@@ -124,4 +183,19 @@
     font-size: 0.6rem;
     padding: 2.5rem 1rem;
   }
+}
+
+/* ============== COLORED TEXT ============= */
+
+.yellow {
+  color: var(--yellow-color);
+}
+.blue {
+  color: var(--blue-color);
+}
+.orange {
+  color: var(--orange-color);
+}
+.purple {
+  color: var(--purple-color);
 }

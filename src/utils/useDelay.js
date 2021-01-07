@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Delayed = (props) => {
+const useDelay = (props) => {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
@@ -13,4 +13,4 @@ const Delayed = (props) => {
   return hidden ? "" : props.children;
 };
 
-export default Delayed;
+export default useDelay;

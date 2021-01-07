@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./style.css";
 import "aos/dist/aos.css";
-import Navbar from "./components/NavBar/NavBar";
-import Introduction from "./components/Introduction/IntroductionContent";
+import Navbar from "./components/NavBar";
+import Introduction from "./components/IntroductionContent";
 import {
   Container,
   SquareContainer,
@@ -10,7 +10,7 @@ import {
   MiniSquareContainer,
   TextContainer,
   WindowBar,
-} from "./components/Window/Window";
+} from "./components/Window";
 
 const App = () => {
   const [x, setX] = useState(0);

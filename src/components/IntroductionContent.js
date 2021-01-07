@@ -1,6 +1,5 @@
 import React from "react";
-import Delayed from "../../utils/delayed";
-import "./introductioncontent.css";
+import useDelay from "../utils/useDelay";
 
 const HomeContent = () => {
   return (
@@ -11,74 +10,74 @@ const HomeContent = () => {
         <span className="purple"> (master)</span>
       </div>
       <span className="yellow">$</span>{" "}
-      <Delayed waitBeforeShow={700}>
+      <useDelay waitBeforeShow={700}>
         run about-me --hire -me
         <br />
         <br />
-        <Delayed waitBeforeShow={400}>
+        <useDelay waitBeforeShow={400}>
           <div>Recent Grad with a B.S in Computer Science</div>
           - Experience with Full Stack Web Development and Software Engineering
           <br /> Click 'github' or 'linkedin' for more information.
           <br />
           <br />
-          <Delayed waitBeforeShow={500}>
+          <useDelay waitBeforeShow={500}>
             Loading languages...
             <br />{" "}
-            <Delayed waitBeforeShow={1000}>
+            <useDelay waitBeforeShow={1000}>
               {">>>"} Javascript / Typescript ........ 100%
               <br />
-              <Delayed waitBeforeShow={345}>
+              <useDelay waitBeforeShow={345}>
                 {">>>"} Java ........................... 100%
                 <br />
-                <Delayed waitBeforeShow={100}>
+                <useDelay waitBeforeShow={100}>
                   {" "}
                   {">>>"} Python ......................... 100%
                   <br />
-                  <Delayed waitBeforeShow={300}>
+                  <useDelay waitBeforeShow={300}>
                     {">>>"} Swift .......................... 75%
                     <br />
-                    <Delayed waitBeforeShow={300}>
+                    <useDelay waitBeforeShow={300}>
                       {">>>"} SQL ............................ 70%
                       <br />
-                      <Delayed waitBeforeShow={230}>
+                      <useDelay waitBeforeShow={230}>
                         {" "}
                         {">>>"} GraphQL ........................ 65%
                         <br />
-                        <Delayed waitBeforeShow={150}>
+                        <useDelay waitBeforeShow={150}>
                           <br />
                           Loading technologies...
                           <br />
-                          <Delayed waitBeforeShow={1100}>
+                          <useDelay waitBeforeShow={1100}>
                             {">>>"} React.js / Next.js ............. 100%
                             <br />
-                            <Delayed waitBeforeShow={200}>
+                            <useDelay waitBeforeShow={200}>
                               {">>>"} Node.js ........................ 100%
                               <br />
-                              <Delayed waitBeforeShow={500}>
+                              <useDelay waitBeforeShow={500}>
                                 {">>>"} Git ............................ 100%
                                 <br />
-                                <Delayed waitBeforeShow={300}>
+                                <useDelay waitBeforeShow={300}>
                                   {">>>"} PostgreSQL ..................... 50%
                                   <br />
-                                  <Delayed waitBeforeShow={250}>
+                                  <useDelay waitBeforeShow={250}>
                                     <br />
                                     currently looking for software engineering
                                     roles...
-                                  </Delayed>
-                                </Delayed>
-                              </Delayed>
-                            </Delayed>
-                          </Delayed>
-                        </Delayed>
-                      </Delayed>
-                    </Delayed>
-                  </Delayed>
-                </Delayed>
-              </Delayed>
-            </Delayed>
-          </Delayed>
-        </Delayed>
-      </Delayed>
+                                  </useDelay>
+                                </useDelay>
+                              </useDelay>
+                            </useDelay>
+                          </useDelay>
+                        </useDelay>
+                      </useDelay>
+                    </useDelay>
+                  </useDelay>
+                </useDelay>
+              </useDelay>
+            </useDelay>
+          </useDelay>
+        </useDelay>
+      </useDelay>
     </div>
   );
 };
