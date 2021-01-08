@@ -6,6 +6,7 @@ On-going development of my professional portfolio hosted using Github Pages. Ins
 - integrate github api for current opensource projects
 - create a full backend for emailing and contacting
 - add pages for other projects like stock checkers, ticker suggestions, etc... (any projects i do)
+- convert javascript -> typescript
 
 dev: `yarn start`
 deploy : `yarn run deploy`
