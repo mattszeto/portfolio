@@ -12,7 +12,9 @@
     "aos": "^2.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-draggable": "^4.4.3",
     "react-scripts": "^3.4.3",
+    "react-typing-animation": "^1.6.2",
     "styled-components": "^5.2.0"
   },
   "scripts": {

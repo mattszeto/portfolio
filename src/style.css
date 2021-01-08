@@ -37,10 +37,9 @@ html {
   font-family: "Roboto Mono";
 }
 
-.app {
-  height: 100vh;
+/* .app {
   background-color: var(--black-color);
-}
+} */
 
 .app-body {
   /* display: flex; */

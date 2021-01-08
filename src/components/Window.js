@@ -17,7 +17,7 @@ export const SquareContainer = styled.div`
   margin-top: 1.5rem;
   width: 100%;
   height: 100%;
-  min-height: 30rem;
+  min-height: 480px;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
@@ -30,7 +30,8 @@ export const MiniContainer = styled.div`
   padding: 5px 5px;
   margin-bottom: 16px;
   width: 90%;
-  max-width: 350px;
+  max-width: 400px;
+  max-height: 100px;
 `;
 
 export const MiniSquareContainer = styled.div`
@@ -38,9 +39,7 @@ export const MiniSquareContainer = styled.div`
   background-color: ${colors.darkGrey};
   border-radius: 5px;
   margin-top: 1.5rem;
-  width: 100%;
-  height: 100%;
-  min-height: 15rem;
+  min-height: 100px;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
