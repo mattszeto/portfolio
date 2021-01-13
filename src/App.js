@@ -84,7 +84,7 @@ const App = () => {
                     <span className="blue">swe-projects@MATT </span>
                     <span className="orange">~/mattszeto/projects</span>
                   </div>
-                  <span className="yellow">$</span> coming soon.. (DRAG ME)
+                  <span className="yellow">$</span> coming soon... (DRAG ME)
                 </TextContainer>
               </MiniSquareContainer>
             </MiniContainer>
@@ -109,7 +109,7 @@ const App = () => {
                   <span className="blue">swe-projects@MATT </span>
                   <span className="orange">~/mattszeto/projects</span>
                 </div>
-                <span className="yellow">$</span> coming soon..
+                <span className="yellow">$</span> coming soon...
               </TextContainer>
             </MiniSquareContainer>
           </MiniContainer>
