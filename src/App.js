@@ -12,6 +12,7 @@ import {
   WindowBar,
 } from "./components/Window";
 import Draggable from "react-draggable";
+import ViewOnGithub from "./components/ViewOnGithub";
 
 const App = () => {
   // const [x, setX] = useState(0);
@@ -115,6 +116,7 @@ const App = () => {
           </MiniContainer>
         </div>
       )}
+      <ViewOnGithub />
     </div>
   );
 };

@@ -4,7 +4,6 @@ const useDelay = (props) => {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
-    console.log("component mounted!");
     setTimeout(() => {
       setHidden(false);
     }, props.waitBeforeShow);

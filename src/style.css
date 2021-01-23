@@ -60,6 +60,38 @@ html {
   justify-content: space-evenly;
 }
 
+/* ============== ICONS ============= */
+
+.button-svg {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: grey;
+  opacity: 0.5;
+  font-size: 12px;
+  text-decoration: none;
+}
+.button-svg:focus {
+  outline: none;
+}
+.button-svg:hover {
+  color: white;
+}
+.text-icon {
+  vertical-align: middle;
+  display: inline-block;
+}
+.svg-icon {
+  vertical-align: middle;
+  fill: gray;
+  display: inline-block;
+}
+.svg-icon:hover {
+  fill: white;
+}
+
 /* =========== NAV BAR ============ */
 
 .navbar-items {
