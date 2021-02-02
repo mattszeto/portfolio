@@ -1,10 +1,9 @@
 {
   "name": "portfolio",
-  "version": "0.1.1",
+  "version": "1.22.4",
   "private": true,
   "homepage": "http://matthewszeto.com",
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.19.26",
     "@mojs/core": "^0.288.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -14,7 +13,6 @@
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.3",
     "react-scripts": "^3.4.3",
-    "react-typing-animation": "^1.6.2",
     "styled-components": "^5.2.0"
   },
   "scripts": {
