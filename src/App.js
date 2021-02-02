@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import "aos/dist/aos.css";
 import Navbar from "./components/NavBar";
@@ -15,14 +15,6 @@ import Draggable from "react-draggable";
 import ViewOnGithub from "./components/ViewOnGithub";
 
 const App = () => {
-  // const [x, setX] = useState(0);
-  // const [y, setY] = useState(0);
-
-  // do something with the mouse cordinates like changing based on where the cursor is
-  // const _onMouseMove = (e) => {
-  //   setX(e.screenX);
-  //   setY(e.screenY);
-  // };
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -94,7 +86,7 @@ const App = () => {
       ) : (
         <div className="app-body">
           <Container>
-            <SquareContainer /*onMouseMove={_onMouseMove}*/>
+            <SquareContainer>
               <WindowBar />
               <TextContainer>
                 <Introduction />

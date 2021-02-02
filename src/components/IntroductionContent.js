@@ -33,30 +33,30 @@ const HomeContent = () => {
                 {">>>"} Python ......................... 100%
                 <br />
                 <UseDelay waitBeforeShow={300}>
-                  {">>>"} Swift .......................... 75%
+                  {">>>"} SQL ............................ 80%
                   <br />
-                  <UseDelay waitBeforeShow={300}>
-                    {">>>"} SQL ............................ 70%
+                  <UseDelay waitBeforeShow={230}>
+                    {" "}
+                    {">>>"} GraphQL ........................ 65%
                     <br />
-                    <UseDelay waitBeforeShow={230}>
-                      {" "}
-                      {">>>"} GraphQL ........................ 65%
+                    <UseDelay waitBeforeShow={150}>
                       <br />
-                      <UseDelay waitBeforeShow={150}>
+                      Loading technologies...
+                      <br />
+                      <UseDelay waitBeforeShow={900}>
+                        {">>>"} React.js / Next.js ............. 100%
                         <br />
-                        Loading technologies...
-                        <br />
-                        <UseDelay waitBeforeShow={900}>
-                          {">>>"} React.js / Next.js ............. 100%
+                        <UseDelay waitBeforeShow={200}>
+                          {">>>"} Node.js ........................ 100%
                           <br />
-                          <UseDelay waitBeforeShow={200}>
-                            {">>>"} Node.js ........................ 100%
+                          <UseDelay waitBeforeShow={500}>
+                            {">>>"} Git ............................ 100%
                             <br />
-                            <UseDelay waitBeforeShow={500}>
-                              {">>>"} Git ............................ 100%
+                            <UseDelay waitBeforeShow={200}>
+                              {">>>"} Django ......................... 75%
                               <br />
                               <UseDelay waitBeforeShow={300}>
-                                {">>>"} PostgreSQL ..................... 50%
+                                {">>>"} PostgreSQL ..................... 75%
                                 <br />
                                 <UseDelay waitBeforeShow={250}>
                                   <br />
