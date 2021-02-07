@@ -216,6 +216,12 @@ html {
   }
 }
 
+/* ============== Projects =============== */
+
+.link {
+  color: var(--white-color);
+}
+
 /* ============== COLORED TEXT ============= */
 
 .yellow {

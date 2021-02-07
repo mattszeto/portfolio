@@ -13,6 +13,7 @@ import {
 } from "./components/Window";
 import Draggable from "react-draggable";
 import ViewOnGithub from "./components/ViewOnGithub";
+import Projects from "./components/Projects";
 
 const App = () => {
   const [dimensions, setDimensions] = useState({
@@ -48,7 +49,7 @@ const App = () => {
               top: -25,
               left: -(dimensions.width / 2 - 700 / 2 - 30),
               right: dimensions.width / 2 - 700 / 2 - 30,
-              bottom: dimensions.height - 109 - 495 - 30,
+              bottom: dimensions.height - 109 - 475 - 30,
             }}
           >
             <Container>
@@ -66,7 +67,7 @@ const App = () => {
               top: -540,
               left: -(dimensions.width / 2 - 400 / 2 - 30),
               right: dimensions.width / 2 - 400 / 2 - 30,
-              bottom: dimensions.height - 100 - 638 - 30,
+              bottom: dimensions.height - 100 - 1000 - 30,
             }}
           >
             <MiniContainer>
@@ -77,7 +78,8 @@ const App = () => {
                     <span className="blue">swe-projects@MATT </span>
                     <span className="orange">~/mattszeto/projects</span>
                   </div>
-                  <span className="yellow">$</span> coming soon... (DRAG ME)
+                  <span className="yellow">$</span> run ./load-projects
+                  <Projects />
                 </TextContainer>
               </MiniSquareContainer>
             </MiniContainer>
@@ -102,7 +104,8 @@ const App = () => {
                   <span className="blue">swe-projects@MATT </span>
                   <span className="orange">~/mattszeto/projects</span>
                 </div>
-                <span className="yellow">$</span> coming soon...
+                <span className="yellow">$</span> run ./load-projects
+                <Projects />
               </TextContainer>
             </MiniSquareContainer>
           </MiniContainer>

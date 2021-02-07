@@ -6,7 +6,7 @@ const projects = [
     description:
       "A music streaming platform for you and your friends to listen to music at the same time.",
     tools: ["React", "JavaScript", "Django", "Spotify API"],
-    repo: "",
+    repo: "https://github.com/mattszeto/asynth",
     demo: "",
     gif: "",
     gifPause: "",
@@ -24,8 +24,8 @@ const projects = [
       "Node",
       "Apollo",
     ],
-    repo: "",
-    demo: "",
+    repo: "https://github.com/mattszeto/upvote",
+    demo: "https://yupvote.net/",
     gif: "",
     gifPause: "",
   },
@@ -33,8 +33,8 @@ const projects = [
     title: "pyRo",
     description:
       "Algorithmic trading robot. Checks indicators, stores buy/sell triggers. Momentum algorithm (linear regression model)",
-    tools: ["Python", "GCP", "BigQuery", "TDA API"],
-    repo: "",
+    tools: ["Python", "GCP", "BigQuery", "tdaAPI"],
+    repo: "https://github.com/mattszeto/pyRo",
     demo: "",
     gif: "",
     gifPause: "",
@@ -42,48 +42,50 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [isPlaying, setIsPlaying] = useState(null);
   return (
     <div id="projects">
-      <p className="title-section">Projects</p>
       <div className="proj-wrapper">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="proj"
-            onMouseOut={() => setIsPlaying(null)}
-            onMouseOver={() => setIsPlaying(index)}
-          >
+          <div key={index} className="proj">
             <div className="details">
-              <h2>{project.title}</h2>
+              <h3 className="orange">{project.title}</h3>
               <div className="subtitles">
-                <small className="description">{project.description}</small>
+                <p className="description">{project.description}</p>
               </div>
               <div className="tools">
                 {project.tools.map((tool, idx) => (
-                  <small key={idx} className="description">
-                    {tool}
+                  <small
+                    key={idx}
+                    className={idx % 2 === 0 ? "blue" : "orange"}
+                  >
+                    {tool}{" "}
                   </small>
                 ))}
               </div>
               <div className="subtitles">
                 <a className="link" href={project.repo} target="__blank">
-                  {" "}
-                  <small>Repository </small>{" "}
+                  <small>Repo</small>
                 </a>
-                <a className="link" href={project.demo} target="__blank">
-                  {" "}
-                  <small>Website </small>{" "}
-                </a>
+
+                {project.demo ? (
+                  <span>
+                    |
+                    <a className="link" href={project.demo} target="__blank">
+                      <small>Website</small>
+                    </a>
+                  </span>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
-            <div className="video-container">
+            {/* <div className="video-container">
               <img
                 className="video"
                 src={isPlaying === index ? project.gif : project.gifPause}
                 alt={project.title}
               />
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
