@@ -48,7 +48,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="proj">
             <div className="details">
-              <h3 className="orange">{project.title}</h3>
+              <br />
+              <div className="yellow">{project.title}</div>
               <div className="subtitles">
                 <p className="description">{project.description}</p>
               </div>
@@ -56,7 +57,7 @@ const Projects = () => {
                 {project.tools.map((tool, idx) => (
                   <small
                     key={idx}
-                    className={idx % 2 === 0 ? "blue" : "orange"}
+                    className={idx % 2 === 0 ? "green" : "orange"}
                   >
                     {tool}{" "}
                   </small>

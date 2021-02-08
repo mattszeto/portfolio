@@ -3,21 +3,18 @@ import styled from "styled-components";
 import colors from "../common/colors";
 
 export const Container = styled.div`
-  margin: 0 auto;
   padding: 5px 5px;
-  margin-top: 10px;
+  margin: 10px;
   width: 90%;
-  max-width: 700px;
+  max-width: 600px;
 `;
 
 export const SquareContainer = styled.div`
   box-sizing: border-box;
   background-color: ${colors.darkGrey};
   border-radius: 5px;
-  margin-top: 1.5rem;
   width: 100%;
-  height: 100%;
-  min-height: 425px;
+  min-height: 450px;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
@@ -26,24 +23,25 @@ export const SquareContainer = styled.div`
 `;
 
 export const MiniContainer = styled.div`
-  margin: 0 auto;
   padding: 5px 5px;
-  margin-bottom: 16px;
+  margin: 10px;
   width: 90%;
   max-width: 400px;
-  max-height: 100px;
 `;
 
 export const MiniSquareContainer = styled.div`
   box-sizing: border-box;
   background-color: ${colors.darkGrey};
   border-radius: 5px;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   min-height: 100px;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
     filter: brightness(110%);
+  }
+  @media screen and (max-width: 1020px) {
+    margin-top: 0px;
   }
 `;
 

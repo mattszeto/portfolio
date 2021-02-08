@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const useDelay = (props) => {
   const [hidden, setHidden] = useState(true);
@@ -9,7 +9,7 @@ const useDelay = (props) => {
     }, props.waitBeforeShow);
   }, [props.waitBeforeShow]);
 
-  return hidden ? "" : props.children;
+  return <div className={props.color}>{hidden ? "" : props.children}</div>;
 };
 
 export default useDelay;

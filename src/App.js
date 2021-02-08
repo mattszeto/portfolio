@@ -45,12 +45,21 @@ const App = () => {
       {dimensions.width >= 800 ? (
         <div className="app-body">
           <Draggable
-            bounds={{
-              top: -25,
-              left: -(dimensions.width / 2 - 700 / 2 - 30),
-              right: dimensions.width / 2 - 700 / 2 - 30,
-              bottom: dimensions.height - 109 - 475 - 30,
-            }}
+            bounds={
+              dimensions.width >= 1010
+                ? {
+                    top: -25,
+                    left: -(dimensions.width / 2 - 1000 / 2 - 30),
+                    right: dimensions.width / 2 - 145 / 2 - 30,
+                    bottom: dimensions.height - 109 - 475 - 30,
+                  }
+                : {
+                    top: -25,
+                    left: -(dimensions.width / 2 - 700 / 2 - 30),
+                    right: dimensions.width / 2 - 700 / 2 - 30,
+                    bottom: dimensions.height - 109 - 475 - 30,
+                  }
+            }
           >
             <Container>
               <SquareContainer>
@@ -63,19 +72,28 @@ const App = () => {
           </Draggable>
 
           <Draggable
-            bounds={{
-              top: -540,
-              left: -(dimensions.width / 2 - 400 / 2 - 30),
-              right: dimensions.width / 2 - 400 / 2 - 30,
-              bottom: dimensions.height - 100 - 1000 - 30,
-            }}
+            bounds={
+              dimensions.width >= 1010
+                ? {
+                    top: -25,
+                    left: -(dimensions.width / 2 + 100),
+                    right: dimensions.width / 2 - 1005 / 2 - 30,
+                    bottom: dimensions.height - 109 - 490 - 30,
+                  }
+                : {
+                    top: -540,
+                    left: -(dimensions.width / 2 - 400 / 2 - 30),
+                    right: dimensions.width / 2 - 400 / 2 - 30,
+                    bottom: dimensions.height - 100 - 1000 - 30,
+                  }
+            }
           >
             <MiniContainer>
               <MiniSquareContainer>
                 <WindowBar />
                 <TextContainer>
                   <div>
-                    <span className="blue">swe-projects@MATT </span>
+                    <span className="green">swe-projects@MATT </span>
                     <span className="orange">~/mattszeto/projects</span>
                   </div>
                   <span className="yellow">$</span> run ./load-projects
@@ -101,7 +119,7 @@ const App = () => {
               <WindowBar />
               <TextContainer>
                 <div>
-                  <span className="blue">swe-projects@MATT </span>
+                  <span className="green">swe-projects@MATT </span>
                   <span className="orange">~/mattszeto/projects</span>
                 </div>
                 <span className="yellow">$</span> run ./load-projects

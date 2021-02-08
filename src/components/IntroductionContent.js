@@ -6,7 +6,7 @@ const HomeContent = () => {
   return (
     <div>
       <div>
-        <span className="blue">software-engineer@MATT </span>
+        <span className="green">software-engineer@MATT </span>
         <span className="orange">~/mattszeto/brain/tech</span>
         <span className="purple"> (master)</span>
       </div>
@@ -14,16 +14,16 @@ const HomeContent = () => {
       <br />
       <UseDelay waitBeforeShow={500}>
         <br />
-        <div>Recent Grad with a B.S in Computer Science</div>
-        - Experience with Full Stack Web Development and Software Engineering
-        <br /> Click 'github' or 'linkedin' for more information.
-        <br />
+        <div className="yellow">Recent Grad with a B.S in Computer Science</div>
+        {">"} Experience with Full Stack Development and Software Engineering
+        <div>
+          {">"} Click <i>linkedin</i> or <i>github</i> for more information.
+        </div>
         <br />
         <UseDelay waitBeforeShow={500}>
-          Loading languages...
-          <br />{" "}
+          <div className="yellow">Loading languages...</div>
           <UseDelay waitBeforeShow={800}>
-            {">>>"} Javascript / Typescript ........ 100%
+            {">>>"} <span>JavaScript / Typescript</span> ........ 100%
             <br />
             <UseDelay waitBeforeShow={345}>
               {">>>"} Java ........................... 100%
@@ -41,8 +41,7 @@ const HomeContent = () => {
                     <br />
                     <UseDelay waitBeforeShow={150}>
                       <br />
-                      Loading technologies...
-                      <br />
+                      <div className="yellow">Loading technologies...</div>
                       <UseDelay waitBeforeShow={900}>
                         {">>>"} React.js / Next.js ............. 100%
                         <br />
@@ -58,10 +57,10 @@ const HomeContent = () => {
                               <UseDelay waitBeforeShow={300}>
                                 {">>>"} PostgreSQL ..................... 75%
                                 <br />
-                                <UseDelay waitBeforeShow={250}>
+                                <UseDelay waitBeforeShow={250} color="red">
                                   <br />
-                                  currently looking for software engineering
-                                  roles...
+                                  currently looking for entry-level software
+                                  engineering roles...
                                 </UseDelay>
                               </UseDelay>
                             </UseDelay>

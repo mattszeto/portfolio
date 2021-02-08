@@ -12,7 +12,8 @@
   --black-color: #1f1e1e;
   --white-color: #e8eae6;
   --red-color: #e5707e;
-  --yellow-color: #e8e9a1;
+  --yellow-color: #dcdda4;
+  --green-color: #a0c1b8;
   --blue-color: #a3ddcb;
   --orange-color: #e6b566;
   --purple-color: #9955bb;
@@ -42,7 +43,9 @@ html {
 } */
 
 .app-body {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--black-color);
   width: 100%;
 }
@@ -98,6 +101,7 @@ html {
   height: 70px;
   font-size: 1.1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .navbar-logo {
@@ -235,4 +239,11 @@ html {
 }
 .purple {
   color: var(--purple-color);
+}
+.red {
+  color: var(--red-color);
+}
+
+.green {
+  color: var(--green-color);
 }
