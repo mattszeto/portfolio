@@ -222,8 +222,27 @@ html {
 
 /* ============== Projects =============== */
 
+.links {
+  display: flex;
+}
+
 .link {
-  color: var(--white-color);
+  display: flex;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 6px;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 5px;
+  background: var(--green-color);
+  color: var(--black-color);
+  transition: all 0.15s ease-in;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 1;
+  transform: translateX(-2px) translateY(-2px);
 }
 
 /* ============== COLORED TEXT ============= */
@@ -243,7 +262,6 @@ html {
 .red {
   color: var(--red-color);
 }
-
 .green {
   color: var(--green-color);
 }

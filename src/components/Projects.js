@@ -15,15 +15,7 @@ const projects = [
     title: "yupvote",
     description:
       "Full-stack social media website for sharing ideas and creating conversations",
-    tools: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "GraphQL",
-      "PostgreSQL",
-      "Node",
-      "Apollo",
-    ],
+    tools: ["React", "TypeScript", "GraphQL", "PostgreSQL", "Node"],
     repo: "https://github.com/mattszeto/upvote",
     demo: "https://yupvote.net/",
     gif: "",
@@ -48,29 +40,27 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="proj">
             <div className="details">
-              <br />
-              <div className="yellow">{project.title}</div>
+              <h3 className="yellow">{project.title}</h3>
               <div className="subtitles">
                 <p className="description">{project.description}</p>
               </div>
               <div className="tools">
                 {project.tools.map((tool, idx) => (
-                  <small
+                  <span
                     key={idx}
                     className={idx % 2 === 0 ? "green" : "orange"}
                   >
                     {tool}{" "}
-                  </small>
+                  </span>
                 ))}
               </div>
-              <div className="subtitles">
+              <div className="links">
                 <a className="link" href={project.repo} target="__blank">
                   <small>Repo</small>
                 </a>
 
                 {project.demo ? (
                   <span>
-                    |
                     <a className="link" href={project.demo} target="__blank">
                       <small>Website</small>
                     </a>
