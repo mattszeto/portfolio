@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Repo from "./Repo";
+import Repo from "./Repo.jsx";
 
 const Repos = () => {
   const [repos, setRepos] = useState([]);

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import colors from "../common/colors";
+import colors from "../common/colors.js";
 
 export const Container = styled.div`
   padding: 5px 5px;

@@ -1,5 +1,5 @@
 import React from "react";
-import GithubIcon from "../icons/Github";
+import GithubIcon from "../icons/Github.jsx";
 
 const ViewOnGithub = (props) => {
   return (

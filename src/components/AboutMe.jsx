@@ -1,6 +1,5 @@
 import React from "react";
-// import Typing from "react-typing-animation";
-import UseDelay from "../utils/useDelay";
+import UseDelay from "../utils/useDelay.jsx";
 
 const HomeContent = () => {
   return (
