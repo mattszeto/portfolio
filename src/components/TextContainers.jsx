@@ -60,6 +60,10 @@ export const TextContainer = styled.div`
     transition: all 0.4s ease;
   }
 `;
+export const ImageContainer = styled.div`
+  padding: 12px;
+  color: ${colors.brightRed};
+`;
 
 const TopBar = styled.div`
   height: ${(props) => props.scale * 22}px;

@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Window from "./components/Window.jsx";
 import ViewOnGithub from "./components/ViewOnGithub.jsx";
 import Projects from "./components/Projects.jsx";
+import ProjectContainers from "./components/ProjectContainers";
 
 const App = () => {
   const [dimensions, setDimensions] = useState({
@@ -39,14 +40,17 @@ const App = () => {
             <AboutMe />
           </Window>
 
-          <Window draggable size="s">
-            <div>
-              <span className="green">swe-projects@MATT </span>
-              <span className="orange">~/mattszeto/projects</span>
-            </div>
-            <span className="yellow">$</span> run ./load-projects
-            <Projects />
-          </Window>
+          {/* <Window draggable size="s">
+              <div>
+                <span className="green">swe-projects@MATT </span>
+                <span className="orange">~/mattszeto/projects</span>
+              </div>
+              <span className="yellow">$</span> run ./load-projects
+              <Projects />
+            </Window> */}
+          <div>
+            <ProjectContainers />
+          </div>
         </div>
       ) : (
         <div className="app-body">
@@ -54,16 +58,18 @@ const App = () => {
             <AboutMe />
           </Window>
 
-          <Window size="s">
+          {/* <Window size="s">
             <div>
               <span className="green">swe-projects@MATT </span>
               <span className="orange">~/mattszeto/projects</span>
             </div>
             <span className="yellow">$</span> run ./load-projects
             <Projects />
-          </Window>
+          </Window> */}
+          <ProjectContainers />
         </div>
       )}
+
       <ViewOnGithub />
     </div>
   );

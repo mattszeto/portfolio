@@ -7,7 +7,7 @@ import {
   MiniSquareContainer,
   TextContainer,
   WindowBar,
-} from "./Containers.jsx";
+} from "./TextContainers.jsx";
 import ConditionalWrapper from "../utils/ConditionalWrapper.jsx";
 
 const Window = (props) => {
@@ -30,6 +30,7 @@ const Window = (props) => {
       window.removeEventListener("resize", handleResize);
     };
   });
+  
   if (props.size === "s") {
     return (
       <ConditionalWrapper

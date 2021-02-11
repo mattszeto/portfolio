@@ -18,6 +18,7 @@ const projects = [
     tools: ["React", "TypeScript", "GraphQL", "PostgreSQL", "Node"],
     repo: "https://github.com/mattszeto/upvote",
     demo: "https://yupvote.net/",
+    imgurl: "https://github.com/mattszeto/images-collection/blob/master/yupvote/yupvote-screenshot.png?raw=true",
     gif: "",
     gifPause: "",
   },
@@ -69,7 +70,12 @@ const Projects = () => {
                   ""
                 )}
               </div>
+              
             </div>
+            {/* {project.imgurl ? 
+            <div className="proj-img">
+              <img alt={project.title + "-img"} src={project.imgurl}/>
+            </div> : ""} */}
             {/* <div className="video-container">
               <img
                 className="video"
