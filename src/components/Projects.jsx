@@ -38,6 +38,11 @@ const Projects = () => {
   return (
     <div id="projects">
       <div className="proj-wrapper">
+      <div>
+              <span className="green">swe-projects@MATT </span>
+              <span className="orange">~/mattszeto/projects</span>
+            </div>
+            <span className="yellow">$</span> run ./load-projects
         {projects.map((project, index) => (
           <div key={index} className="proj">
             <div className="details">

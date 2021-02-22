@@ -1,7 +1,7 @@
 import React from "react";
 import UseDelay from "../utils/useDelay.jsx";
 
-const HomeContent = () => {
+const AboutMe = () => {
   return (
     <div>
       <div>
@@ -78,4 +78,4 @@ const HomeContent = () => {
   );
 };
 
-export default HomeContent;
+export default AboutMe;
