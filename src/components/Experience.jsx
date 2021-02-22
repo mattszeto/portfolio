@@ -5,10 +5,10 @@ const Experience = () => {
     <div>
       <div>
         <span className="green">software-engineer@MATT </span>
-        <span className="orange">~/mattszeto/brain/tech</span>
+        <span className="orange">~/mattszeto/experience</span>
         <span className="purple"> (master)</span>
       </div>
-      <span className="yellow">$</span> run about-me --hire -me
+      <span className="yellow">$</span> run experience .
       <br />
     </div>
   );

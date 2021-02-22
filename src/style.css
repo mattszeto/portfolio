@@ -240,6 +240,10 @@ html {
   text-decoration: none;
 }
 
+.web-link {
+  background: var(--orange-color);
+}
+
 .link:hover {
   opacity: 1;
   transform: translateX(-2px) translateY(-2px);
