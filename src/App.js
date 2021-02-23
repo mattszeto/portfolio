@@ -38,16 +38,16 @@ const App = () => {
       {dimensions.width >= 800 ? (
         <div>
           <div className="app-about-me">
-            <Window draggable size="m">
+            <Window size="m">
               <AboutMe />
             </Window>
           </div>
           <div className="app-details">
-            <Window draggable size="s">
-              <Projects />
-            </Window>
             <Window size="m">
               <Experience />
+            </Window>
+            <Window size="s">
+              <Projects />
             </Window>
           </div>
         </div>
@@ -61,10 +61,10 @@ const App = () => {
 
           <div className="app-details">
             <Window size="s">
-              <Projects />
+              <Experience />
             </Window>
             <Window size="s">
-              <Experience />
+              <Projects />
             </Window>
           </div>
         </div>
