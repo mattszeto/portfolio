@@ -33,6 +33,10 @@ html {
   background-color: var(--black-color);
 }
 
+h3 {
+  margin-bottom: -2.5px;
+}
+
 /* ========= MAIN APP ========== */
 * {
   font-family: "Roboto Mono";
@@ -42,12 +46,16 @@ html {
   background-color: var(--black-color);
 } */
 
-.app-body {
+.app-about-me {
+  margin: auto;
+  width: fit-content;
+  justify-content: center;
+}
+
+.app-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--black-color);
-  width: 100%;
 }
 
 .app-header {
@@ -257,6 +265,19 @@ img {
   height: 300px;
 }
 
+/* ============= EXPERIENCES ============== */
+.experience-company {
+  margin-bottom: -10px;
+}
+.experience-title {
+  margin-bottom: -10px;
+}
+.experience-timeline {
+  margin-bottom: 0;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
 /* ============== COLORED TEXT ============= */
 
 .yellow {
@@ -276,4 +297,8 @@ img {
 }
 .green {
   color: var(--green-color);
+}
+
+.grey {
+  color: var(--light-grey-color);
 }

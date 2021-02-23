@@ -14,7 +14,7 @@ const AboutMe = () => {
       <UseDelay waitBeforeShow={500}>
         <br />
         <div className="yellow">Recent Grad with a B.S in Computer Science</div>
-        {">"} Experience with Full Stack Development and Software Engineering
+        {">"} Full Stack and Software Engineering
         <div>
           {">"} Click <i>linkedin</i> or <i>github</i> for more information.
         </div>
@@ -58,8 +58,7 @@ const AboutMe = () => {
                                 <br />
                                 <UseDelay waitBeforeShow={250} color="red">
                                   <br />
-                                  currently looking for entry-level software
-                                  engineering roles...
+                                  currently looking for entry-level swe roles...
                                 </UseDelay>
                               </UseDelay>
                             </UseDelay>

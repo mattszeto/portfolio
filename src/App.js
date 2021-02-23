@@ -36,30 +36,33 @@ const App = () => {
       </header>
 
       {dimensions.width >= 800 ? (
-        <div className="app-body">
-          <Window draggable size="m">
-            <AboutMe />
-          </Window>
-
-          <Window draggable size="s">
-            <Projects />
-          </Window>
-          <div>
+        <div>
+          <div className="app-about-me">
+            <Window draggable size="m">
+              <AboutMe />
+            </Window>
+          </div>
+          <div className="app-details">
+            <Window draggable size="s">
+              <Projects />
+            </Window>
             <Window size="m">
               <Experience />
             </Window>
           </div>
         </div>
       ) : (
-        <div className="app-body">
-          <Window size="m">
-            <AboutMe />
-          </Window>
+        <div>
+          <div className="app-about-me">
+            <Window size="m">
+              <AboutMe />
+            </Window>
+          </div>
 
-          <Window size="s">
-            <Projects />
-          </Window>
-          <div>
+          <div className="app-details">
+            <Window size="s">
+              <Projects />
+            </Window>
             <Window size="s">
               <Experience />
             </Window>

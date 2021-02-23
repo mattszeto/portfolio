@@ -5,15 +5,14 @@ import colors from "../common/colors.js";
 export const Container = styled.div`
   padding: 5px 5px;
   margin: 10px;
-  width: 90%;
-  max-width: 600px;
+  max-width: 500px;
+  
 `;
 
 export const SquareContainer = styled.div`
   box-sizing: border-box;
   background-color: ${colors.darkGrey};
   border-radius: 5px;
-  width: 100%;
   min-height: 450px;
   transition: all 0.3s ease;
   &:hover {
@@ -25,8 +24,7 @@ export const SquareContainer = styled.div`
 export const MiniContainer = styled.div`
   padding: 5px 5px;
   margin: 10px;
-  width: 90%;
-  max-width: 400px;
+  max-width: 450px;
 `;
 
 export const MiniSquareContainer = styled.div`
