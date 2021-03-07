@@ -57,8 +57,7 @@ const AboutMe = () => {
                                 {">>>"} PostgreSQL ..................... 75%
                                 <br />
                                 <UseDelay waitBeforeShow={250} color="red">
-                                  <br />
-                                  currently looking for entry-level swe roles...
+                                  {/* currently looking for entry-level swe roles... */}
                                 </UseDelay>
                               </UseDelay>
                             </UseDelay>

@@ -63,7 +63,7 @@ const App = () => {
             <Window size="s">
               <Experience />
             </Window>
-            <Window size="s">
+            <Window className="app-window" size="s">
               <Projects />
             </Window>
           </div>
