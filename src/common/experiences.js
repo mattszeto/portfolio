@@ -1,15 +1,15 @@
 const experiences = [
-  // {
-  //   company: "MH Education",
-  //   title: "Software Engineer",
-  //   type: "Full-Time",
-  //   description: "",
-  //   start: "2021",
-  //   end: "present",
-  //   current: true,
-  //   tools: ["GO", "Angular", "TypeScript"],
-  //   company_image: "",
-  // },
+  {
+    company: "Mcgraw Hill",
+    title: "Software Engineer",
+    type: "Full-Time",
+    description: "Platform Interoperability and L-Services",
+    start: "2021",
+    end: "present",
+    current: true,
+    tools: ["Golang", "Angular", "TypeScript"],
+    company_image: "",
+  },
   {
     company: "Open Source",
     title: "Open Source Developer",
@@ -50,18 +50,18 @@ const experiences = [
     ],
     company_image: "",
   },
-  {
-    company: "iD Tech - Stanford University",
-    title: "Programming Mentor",
-    type: "Internship",
-    description:
-      "Worked as a mentor to incoming high-school and college students, teaching them python and java fundamentals.",
-    start: "2017",
-    end: "2017",
-    current: false,
-    tools: ["Java", "Python"],
-    company_image: "",
-  },
+  // {
+  //   company: "iD Tech - Stanford University",
+  //   title: "Programming Mentor",
+  //   type: "Internship",
+  //   description:
+  //     "Worked as a mentor to incoming high-school and college students, teaching them python and java fundamentals.",
+  //   start: "2017",
+  //   end: "2017",
+  //   current: false,
+  //   tools: ["Java", "Python"],
+  //   company_image: "",
+  // },
 ];
 
 export default experiences;
