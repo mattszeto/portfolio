@@ -15,7 +15,7 @@ const projects = [
       "Full-stack social media website for sharing ideas and creating conversations",
     tools: ["React", "TypeScript", "GraphQL", "PostgreSQL", "Node"],
     repo: "https://github.com/mattszeto/upvote",
-    demo: "https://yupvote.net/",
+    demo: "",
     imgurl:
       "https://github.com/mattszeto/images-collection/blob/master/yupvote/yupvote-screenshot.png?raw=true",
     gif: "",

@@ -17,7 +17,7 @@ const experiences = [
     description:
       "Working on open source projects like PyRo, a python algorithmic trading robot and YupVote, a full-stack application used to share and dicuss ideas",
     start: "2020",
-    end: "present",
+    end: "2021",
     current: false,
     tools: [
       "React",
