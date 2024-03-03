@@ -12,11 +12,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.3",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -40,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@svgr/cli": "^5.5.0",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
     "gh-pages": "^2.2.0"
   }
 }
