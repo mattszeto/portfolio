@@ -1,16 +1,15 @@
 import React from "react";
-import projects from "../common/projects"
-
+import projects from "../common/projects";
 
 const Projects = () => {
   return (
     <div id="projects">
       <div className="proj-wrapper">
-      <div>
-              <span className="green">swe-projects@MATT </span>
-              <span className="orange">~/mattszeto/projects</span>
-            </div>
-            <span className="yellow">$</span> run ./load-projects
+        <div>
+          <span className="green">swe-projects@MATT </span>
+          <span className="orange">~/mattszeto/projects</span>
+        </div>
+        <span className="yellow">$</span> run ./load-projects
         {projects.map((project, index) => (
           <div key={index} className="proj">
             <div className="details">
@@ -35,7 +34,11 @@ const Projects = () => {
 
                 {project.demo ? (
                   <span>
-                    <a className="link web-link" href={project.demo} target="__blank">
+                    <a
+                      className="link web-link"
+                      href={project.demo}
+                      target="__blank"
+                    >
                       <small>Website</small>
                     </a>
                   </span>
@@ -43,7 +46,6 @@ const Projects = () => {
                   ""
                 )}
               </div>
-              
             </div>
             {/* {project.imgurl ? 
             <div className="proj-img">

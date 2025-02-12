@@ -1,4 +1,16 @@
-const experiences = [
+export interface Experience {
+  company: string;
+  title: string;
+  type: string;
+  start: string;
+  end: string;
+  current: boolean;
+  description: string;
+  tools: string[];
+  company_image: string;
+}
+
+const experiences: Experience[] = [
   {
     company: "Mcgraw Hill",
     title: "Software Engineer",

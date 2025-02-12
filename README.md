@@ -22,7 +22,7 @@ _theme and fonts are inspired by monkeytype.com (a great place to practice typin
 
 #### possible but not likely:
 
-- [ ] convert javascript -> typescript ???
+- [x] convert javascript -> typescript (thank you AI)
 
 #### how to run dev:
 
