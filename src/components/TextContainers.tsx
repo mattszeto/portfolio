@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import colors from "../common/colors.js";
+import colors from "../common/colors";
 
 export const Container = styled.div`
-  padding: 5px 5px;
+  padding: 5px;
   margin: 10px;
   max-width: 500px;
-  
 `;
 
 export const SquareContainer = styled.div`
@@ -16,13 +15,13 @@ export const SquareContainer = styled.div`
   min-height: 450px;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
+    transform: scale(1.01);
     filter: brightness(110%);
   }
 `;
 
 export const MiniContainer = styled.div`
-  padding: 5px 5px;
+  padding: 5px;
   margin: 10px;
   max-width: 450px;
 `;
@@ -35,7 +34,7 @@ export const MiniSquareContainer = styled.div`
   min-height: 100px;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.01) translate(calc(0 / 50 * 1px), calc(0 / 50 * 1px));
+    transform: scale(1.01);
     filter: brightness(110%);
   }
   @media screen and (max-width: 1020px) {
@@ -43,44 +42,12 @@ export const MiniSquareContainer = styled.div`
   }
 `;
 
-export const TextContainer = styled.div`
-  padding: 16px;
-  color: ${colors.red};
-  font-size: 0.8rem;
-  transition: all 0.1s ease;
+interface CircleProps {
+  scale: number;
+  bgColor: string;
+}
 
-  @media screen and (max-width: 400px) {
-    font-size: 10px;
-    transition: all 0.4s ease;
-  }
-  @media screen and (max-width: 310px) {
-    font-size: 8.5px;
-    transition: all 0.4s ease;
-  }
-`;
-export const ImageContainer = styled.div`
-  padding: 12px;
-  color: ${colors.brightRed};
-`;
-
-const TopBar = styled.div`
-  height: ${(props) => props.scale * 22}px;
-  background: -webkit-linear-gradient(
-    top,
-    ${colors.darkGrey},
-    ${colors.darkGrey}
-  );
-  border-radius: ${(props) => props.scale * 6}px ${(props) => props.scale * 4}px
-    0 0;
-  width: 100%;
-`;
-
-const CirclesContainer = styled.div`
-  display: flex;
-  padding-left: ${(props) => props.scale * 3}px;
-`;
-
-const Circle = styled.div`
+const Circle = styled.div<CircleProps>`
   border-radius: ${(props) => props.scale * 50}px;
   background-color: ${(props) => props.bgColor};
   width: ${(props) => props.scale * 12}px;
@@ -99,7 +66,17 @@ const Circle = styled.div`
   }
 `;
 
-export const WindowBar = ({ scale, circle, circleColors }) => (
+interface WindowBarProps {
+  scale?: number;
+  circle?: number;
+  circleColors?: string[];
+}
+
+export const WindowBar: React.FC<WindowBarProps> = ({
+  scale = 1,
+  circle = 0.75,
+  circleColors = [colors.red, colors.yellow, colors.green],
+}) => (
   <TopBar scale={scale}>
     <CirclesContainer scale={scale}>
       <Circle scale={circle} bgColor={circleColors[0]} />
@@ -109,8 +86,40 @@ export const WindowBar = ({ scale, circle, circleColors }) => (
   </TopBar>
 );
 
-WindowBar.defaultProps = {
-  scale: 1,
-  circle: 0.75,
-  circleColors: [colors.red, colors.yellow, colors.green],
-};
+const TopBar = styled.div<{ scale: number }>`
+  height: ${(props) => props.scale * 22}px;
+  background: -webkit-linear-gradient(
+    top,
+    ${colors.darkGrey},
+    ${colors.darkGrey}
+  );
+  border-radius: ${(props) => props.scale * 6}px ${(props) => props.scale * 4}px
+    0 0;
+  width: 100%;
+`;
+
+const CirclesContainer = styled.div<{ scale: number }>`
+  display: flex;
+  padding-left: ${(props) => props.scale * 3}px;
+`;
+
+export const TextContainer = styled.div`
+  padding: 16px;
+  color: ${colors.red};
+  font-size: 0.8rem;
+  transition: all 0.1s ease;
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+    transition: all 0.4s ease;
+  }
+  @media screen and (max-width: 310px) {
+    font-size: 8.5px;
+    transition: all 0.4s ease;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  padding: 12px;
+  color: ${colors.brightRed};
+`;

@@ -1,28 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import colors from "../common/colors.js";
-import { TextContainer, WindowBar } from "./TextContainers.jsx";
+import { TextContainer, WindowBar } from "./TextContainers";
 
-
-
-const ProjectContainer = (props) => {
-    return (
-            <Container>
-                <SquareContainer>
-                    <WindowBar/>
-                    <TextContainer>
-                        Hello there KJSHDFLIKJSDHFLSIDGHSDLIUGF HSIUDF HSIDUGH SILUDHGSLDI
-                    </TextContainer>
-                </SquareContainer>
-            </Container>
-    )
+interface ProjectContainerProps {
+  // Define any props that ProjectContainer might receive here
 }
+
+const ProjectContainer: React.FC<ProjectContainerProps> = (props) => {
+  return (
+    <Container>
+      <SquareContainer>
+        <WindowBar />
+        <TextContainer>
+          Hello there KJSHDFLIKJSDHFLSIDGHSDLIUGF HSIUDF HSIDUGH SILUDHGSLDI
+        </TextContainer>
+      </SquareContainer>
+    </Container>
+  );
+};
+
 export const Container = styled.div`
   padding: 5px 5px;
   margin: 10px;
   width: 90%;
   max-width: 600px;
 `;
+
 export const SquareContainer = styled.div`
   box-sizing: border-box;
   background-color: ${colors.darkGrey};
@@ -36,4 +40,4 @@ export const SquareContainer = styled.div`
   }
 `;
 
-export default ProjectContainer
+export default ProjectContainer;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="navbar-items">
       <a
