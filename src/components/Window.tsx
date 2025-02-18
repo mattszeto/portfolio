@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactNode } from "react";
+import React, { useState, useRef, useEffect, ReactNode } from "react";
 import Draggable from "react-draggable";
 import {
   MiniContainer,
@@ -22,6 +22,14 @@ const Window: React.FC<WindowProps> = ({ size, draggable, children }) => {
     width: window.innerWidth,
   });
 
+  const componentRef = useRef<HTMLDivElement>(null);
+  const [bounds, setBounds] = useState({
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+  });
+
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
@@ -36,28 +44,27 @@ const Window: React.FC<WindowProps> = ({ size, draggable, children }) => {
     };
   }, []);
 
-  const getBounds = () => {
-    if (dimensions.width >= 1010) {
-      return {
-        top: -25,
-        left: -(dimensions.width / 2 + 100),
-        right: dimensions.width / 2 - 1005 / 2 - 30,
-        bottom: dimensions.height - 109 - 600 - 30,
-      };
-    } else {
-      return {
-        top: -540,
-        left: -(dimensions.width / 2 - 400 / 2 - 30),
-        right: dimensions.width / 2 - 400 / 2 - 30,
-        bottom: dimensions.height - 100 - 1300 - 30,
-      };
-    }
-  };
+  useEffect(() => {
+    const getBounds = () => {
+      if (componentRef.current) {
+        const rect = componentRef.current.getBoundingClientRect();
+        setBounds({
+          top: -rect.top,
+          left: -rect.left,
+          right: dimensions.width - rect.right,
+          bottom: dimensions.height - rect.bottom,
+        });
+      }
+    };
+
+    getBounds();
+    console.log(bounds);
+  }, [dimensions]); // Run after initial render
 
   const renderContent = () => {
     if (size === "s") {
       return (
-        <MiniContainer>
+        <MiniContainer ref={componentRef}>
           <MiniSquareContainer>
             <WindowBar />
             <TextContainer>{children}</TextContainer>
@@ -66,7 +73,7 @@ const Window: React.FC<WindowProps> = ({ size, draggable, children }) => {
       );
     } else if (size === "m") {
       return (
-        <Container>
+        <Container ref={componentRef}>
           <SquareContainer>
             <WindowBar />
             <TextContainer>{children}</TextContainer>
@@ -80,9 +87,7 @@ const Window: React.FC<WindowProps> = ({ size, draggable, children }) => {
   return (
     <ConditionalWrapper
       condition={draggable}
-      wrapper={(children) => (
-        <Draggable bounds={getBounds()}>{children}</Draggable>
-      )}
+      wrapper={(children) => <Draggable bounds={bounds}>{children}</Draggable>}
     >
       {renderContent()}
     </ConditionalWrapper>

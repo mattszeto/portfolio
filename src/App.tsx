@@ -25,18 +25,19 @@ const App: React.FC = () => {
     };
   }, []);
 
+  const ifMobileView = dimensions.width <= 1027;
   const renderWindows = () => (
     <div>
       <div className="app-about-me">
-        <Window size="m" draggable={true}>
+        <Window size="m" draggable={!ifMobileView}>
           <AboutMe />
         </Window>
       </div>
       <div className="app-details">
-        <Window size="m" draggable={true}>
+        <Window size="m" draggable={!ifMobileView}>
           <Experience />
         </Window>
-        <Window size="s" draggable={true}>
+        <Window size="s" draggable={!ifMobileView}>
           <Projects />
         </Window>
       </div>
@@ -48,7 +49,7 @@ const App: React.FC = () => {
       <header className="app-header">
         <Navbar />
       </header>
-      {dimensions.width >= 800 ? renderWindows() : renderWindows()}
+      {renderWindows()}
     </div>
   );
 };
