@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
+import Monitor from "./components/Monitor";
 import Window from "./components/Window";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
@@ -27,7 +28,7 @@ const App: React.FC = () => {
 
   const ifMobileView = dimensions.width <= 1027;
   const renderWindows = () => (
-    <div>
+    <Monitor>
       <div className="app-about-me">
         <Window size="m" draggable={!ifMobileView}>
           <AboutMe />
@@ -41,7 +42,7 @@ const App: React.FC = () => {
           <Projects />
         </Window>
       </div>
-    </div>
+    </Monitor>
   );
 
   return (

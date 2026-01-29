@@ -70,14 +70,16 @@ interface WindowBarProps {
   scale?: number;
   circle?: number;
   circleColors?: string[];
+  className?: string;
 }
 
 export const WindowBar: React.FC<WindowBarProps> = ({
   scale = 1,
   circle = 0.75,
   circleColors = [colors.red, colors.yellow, colors.green],
+  className,
 }) => (
-  <TopBar scale={scale}>
+  <TopBar className={className} scale={scale}>
     <CirclesContainer scale={scale}>
       <Circle scale={circle} bgColor={circleColors[0]} />
       <Circle scale={circle} bgColor={circleColors[1]} />
@@ -96,6 +98,10 @@ const TopBar = styled.div<{ scale: number }>`
   border-radius: ${(props) => props.scale * 6}px ${(props) => props.scale * 4}px
     0 0;
   width: 100%;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
 `;
 
 const CirclesContainer = styled.div<{ scale: number }>`
